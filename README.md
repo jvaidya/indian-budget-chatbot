@@ -2,15 +2,15 @@
 
 Simple chatbot to answer questions related to annual budget speeches delivered by Indian Finance Ministers over the years.
 
-This chat bot is based on a Jupyter notebook put together for me by @radoshi 
+This OpenAI-powered chatbot is based on a Jupyter notebook put together for me by [@radoshi](https://github.com/radoshi) 
 
 For this chatbot:
 
 1. I downloaded all the pdf files of the speeches from https://www.indiabudget.gov.in/bspeech.php, and stored them in the "data" directory.
 
-2. From these documents, I built a VectorStoreIndex using LlamaIndex and persisted it in the "storage" directory. The program create_index.py can be used for regenerating the VectorStoreIndex.
+2. From these documents, I built a VectorStoreIndex using LlamaIndex and persisted it in the "storage" directory. The program *create_index.py* can be used for regenerating the VectorStoreIndex.
 
-3. The actual chatbot, run_query.py, loads the VectorStoreIndex and uses it as a context to send the query to OpenAI and prints the response. The responses are logged into the chat-log.txt file.
+3. The actual chatbot, *run_query.py*, loads the VectorStoreIndex and uses it as a context to send the query to OpenAI and prints the response. The responses are logged into the chat-log.txt file.
 
 ## Installation
 
