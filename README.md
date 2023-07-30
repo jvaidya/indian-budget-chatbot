@@ -6,8 +6,7 @@ This chat bot is based on a Jupyter notebook put together for me by @radoshi
 
 For this chatbot:
 
-1. I downloaded all the pdf files of the speeches from https://www.indiabudget.gov.in/bspeech.php
-, and stored them in the "data" directory.
+1. I downloaded all the pdf files of the speeches from https://www.indiabudget.gov.in/bspeech.php, and stored them in the "data" directory.
 
 2. From these documents, I built a VectorStoreIndex using LlamaIndex and persisted it in the "storage" directory. The program create_index.py can be used for regenerating the VectorStoreIndex.
 
