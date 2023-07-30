@@ -1,12 +1,13 @@
 # Indian Budget Chatbot
 
-Simple chatbot to answer questions related to Budget Speeches made by Indian Finance Ministers over the years.
+Simple chatbot to answer questions related to annual budget speeches delivered by Indian Finance Ministers over the years.
 
-This chat bot is based on a Jupyter notebook put together for me by @Rushabh Doshi here: 
+This chat bot is based on a Jupyter notebook put together for me by @radoshi 
 
 For this chatbot:
 
-1. I downloaded all the pdf files of the speeches from xxx, and stored them in the "data" directory.
+1. I downloaded all the pdf files of the speeches from https://www.indiabudget.gov.in/bspeech.php
+, and stored them in the "data" directory.
 
 2. From these documents, I built a VectorStoreIndex using LlamaIndex and persisted it in the "storage" directory. The program create_index.py can be used for regenerating the VectorStoreIndex.
 
@@ -26,7 +27,7 @@ poetry install
 
 ## Usage
 
-First, copy the openai api key in a file named openai-api-key, then run:
+First, copy the openai api key in a file named **openai-api-key**, then run:
 
 ```bash
 poetry run python3 run_query.py
@@ -34,7 +35,7 @@ poetry run python3 run_query.py
 
 ## To rebuild index
 
-First, copy the openai api key in a file named openai-api-key, then run:
+First, copy the openai api key in a file named **openai-api-key**, then run:
 
 ```bash
 rm -rf storage
