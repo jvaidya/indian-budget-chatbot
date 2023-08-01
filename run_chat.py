@@ -12,26 +12,32 @@ else:
     exit(1)
 
 from llama_index import StorageContext, load_index_from_storage
+from llama_index.memory import ChatMemoryBuffer
 
 storage_context = StorageContext.from_defaults(persist_dir="./storage")
 
 index = load_index_from_storage(storage_context)
 
-query_engine = index.as_query_engine()
+# query_engine = index.as_query_engine()
+memory = ChatMemoryBuffer.from_defaults(token_limit=256000)
+chat_engine = index.as_chat_engine(chat_mode="context",
+                                   memory=memory,
+                                   system_prompt="You are a chatbot, able to have normal interactions, as well as talk about Indian Budget Speeches",
+)
 
-print("\nThis program answers queries about the Indian Budget speeches delivered by the Finance Minister.\n")
+print("\nThis program can chat about the Indian Budget speeches delivered by the Finance Minister.\n")
 
 output = ""
 
 while True:
     try:
-        query = input("Enter a query (Ctrl-D to exit): ")
-        response = query_engine.query(query)
+        query = input("Ask away (Ctrl-D to exit): ")
+        response = chat_engine.chat(query)
         print(response)
         print("\n")
         output = output + "Q: " + query + "\nA: " + response.response.lstrip() + "\n\n"
     except EOFError:
-        logfile = "query-log.txt"
+        logfile = "chat-log.txt"
         if os.path.exists(logfile):
             f = open(logfile, 'a')
         else:
