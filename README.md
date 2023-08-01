@@ -60,22 +60,6 @@ cd data
 wget -r -nd -nc -A.pdf -l 1 -e robots=off https://www.indiabudget.gov.in/bspeech.php
 ```
 
-## Sample of a chat session from run_chat.py (also see chat-log.txt)
-
-I have budget speeches from 2014-15 to 2021-22.
-
-Q: which years does your knowledge of budgets span?
-
-A: My knowledge of Indian budget speeches spans from 1956-57 to 2021-22.
-
-Q: what were the major changes from 2014 to 2022
-
-A: The major changes from 2014-15 to 2021-22 include an increase in government expenditure, an increase in foreign aid, an increase in foreign direct investment, an increase in digital infrastructure, an increase in the number of patents issued, an increase in the GDP growth rate, and an increase in the number of social and economic indicators. Additionally, the government has implemented a number of game-changing reforms, such as the Goods and Services Tax (GST) and the JAM Trinity (Jan Dhan, Aadhar and Mobile).
-
-Q: could you give me numbers?
-
-A: Sure. Government expenditure increased from Rs. 17,94,892 crore in 2014-15 to Rs. 30,42,230 crore in 2021-22. Foreign aid increased from Rs. 67,876 crore to Rs. 1,19,955 crore during this period. Foreign direct investment increased from Rs. 1,45,814 crore to Rs. 3,05,814 crore. Digital infrastructure increased from Rs. 1,13,000 crore to Rs. 3,00,000 crore. The number of patents issued increased from 8,945 to 11,945. The GDP growth rate increased from 6.9% to 7.4%. The number of social and economic indicators increased from 8 to 12.
-
 ## Sample queries and responses from run_query.py (also see query-log.txt)
 
 Q: What is the earliest budget you know about?
@@ -105,4 +89,27 @@ A: In the 2022 budget speech, Nirmala Sitharaman, the Minister of Finance, expre
 Q: How have the agricultural subsidies changed over the last ten years?
 
 A: Over the last ten years, the agricultural subsidies have decreased significantly. The Central Government has reduced and eliminated subsidies for foodgrains, and the State Governments have been asked to subsidize foodgrains on their own resources. Additionally, the price of fertilizers has not been increased since 1981, and the export subsidies have been reduced from Rs.4200 crores to Rs.1224 crores.
+
+## Sample of a chat session from run_chat.py (also see chat-log.txt)
+
+Q: which years does your knowledge of budgets span?
+A: My knowledge of Indian budget speeches spans from 1956-57 to 2014-15.
+
+Q: what were the major changes from 56 to 66
+A: The major changes from 1956-57 to 1966-67 include an increase in government expenditure, a decrease in non-food imports, an increase in food imports, a decrease in foreign exchange reserves, and an increase in foreign aid. Additionally, the budget deficit increased significantly during this period.
+
+Q: could you give me numbers?
+A: Sure. Government expenditure increased from Rs. 2,845 crore in 1956-57 to Rs. 5,845 crore in 1966-67. Non-food imports decreased from Rs. 1,845 crore to Rs. 1,345 crore during this period. Food imports increased from Rs. 1,095 crore to Rs. 1,495 crore. Foreign exchange reserves decreased from Rs. 1,095 crore to Rs. 845 crore. Foreign aid increased from Rs. 545 crore to Rs. 1,095 crore. The budget deficit increased from Rs. 345 crore to Rs. 1,845 crore.
+
+Q: do you have budget speechees from 2014 to 2022?
+A: Yes, I have budget speeches from 2014-15 to 2021-22.
+
+Q: which years does your knowledge of budgets span?
+A: My knowledge of Indian budget speeches spans from 1956-57 to 2021-22.
+
+Q: what were the major changes from 2014 to 2022
+A: The major changes from 2014-15 to 2021-22 include an increase in government expenditure, an increase in foreign aid, an increase in foreign direct investment, an increase in digital infrastructure, an increase in the number of patents issued, an increase in the GDP growth rate, and an increase in the number of social and economic indicators. Additionally, the government has implemented a number of game-changing reforms, such as the Goods and Services Tax (GST) and the JAM Trinity (Jan Dhan, Aadhar and Mobile).
+
+Q: could you give me numbers?
+A: Sure. Government expenditure increased from Rs. 17,94,892 crore in 2014-15 to Rs. 30,42,230 crore in 2021-22. Foreign aid increased from Rs. 67,876 crore to Rs. 1,19,955 crore during this period. Foreign direct investment increased from Rs. 1,45,814 crore to Rs. 3,05,814 crore. Digital infrastructure increased from Rs. 1,13,000 crore to Rs. 3,00,000 crore. The number of patents issued increased from 8,945 to 11,945. The GDP growth rate increased from 6.9% to 7.4%. The number of social and economic indicators increased from 8 to 12.
 
